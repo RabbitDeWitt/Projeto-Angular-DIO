@@ -6,6 +6,7 @@ import { CourseListComponent } from './course/course-list.component';
 import { StarComponent } from './star/star.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './404/404.component';
 import { InfoComponent } from './course/info/info.component';
 
@@ -21,6 +22,7 @@ import { InfoComponent } from './course/info/info.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path: '', redirectTo: 'courses', pathMatch: 'full'
